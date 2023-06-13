@@ -7,15 +7,15 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 25;
-  --first-color: hsl(var(--hue), 62%, 22%);
+  --hue: 40;
+  --first-color: hsl(var(--hue), 62%, 50%);
   --first-color-alt: hsl(var(--hue), 62%, 18%);
   --first-color-light: hsl(var(--hue), 62%, 56%);
   --first-color-lighten: hsl(var(--hue), 62%, 82%);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: #fff352b6;
+  --body-color: #eeea0b;
   --background-image: linear-gradient(to bottom right, #ec6f09b9, #b0dd0cd2);
   --white-color: #FFF;
   --container-color: #FFF;
@@ -272,6 +272,7 @@ the website, in dark theme
 
 .nav__logo-icon{
   font-size: 1.15rem;
+  width: 35px;
   color: var(--first-color);
 }
 
