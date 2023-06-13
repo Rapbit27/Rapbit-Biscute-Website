@@ -22,7 +22,7 @@
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperBlog = new Swiper(".blog__container", {
+let swiperEvent = new Swiper(".event__container", {
     cssMode: true,
     loop: true,
     navigation: {
