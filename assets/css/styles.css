@@ -15,7 +15,8 @@
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: #fff352;
+  --body-color: #fff352b6;
+  --background-image: linear-gradient(to bottom right, #ec6f09b9, #b0dd0cd2);
   --white-color: #FFF;
   --container-color: #FFF;
 
@@ -90,7 +91,7 @@ textarea{
 
 body{
   margin: var(--header-height) 0 0 0;
-  background-color: var(--body-color);
+  background-image: var(--background-image);
   color: var(--text-color);
   transition: .4s; /*For animation dark mode*/
 }
@@ -156,7 +157,9 @@ body.dark-theme{
   --first-color-dark: hsl(var(--hue), 8%, 20%);
   --title-color: hsl(var(--hue), 4%, 95%);
   --text-color: hsl(var(--hue), 4%, 75%);
-  --body-color: hsl(248, 100%, 8%);
+  --body-color: hsl(246, 43%, 38%);
+  --background-image: linear-gradient(to bottom right, #10022b, #330aeb);
+  
   --container-color: hsl(var(--hue), 8%, 16%);
 }
 
