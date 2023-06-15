@@ -1,27 +1,4 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-
-
-/*==================== REMOVE MENU MOBILE ====================*/
-
-
-/*==================== ACCORDION SKILLS ====================*/
-
-
-/*==================== QUALIFICATION TABS ====================*/
-
-
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== EVENTS SWIPER  ====================*/
 let swiperEvent = new Swiper(".event__container", {
     cssMode: true,
     loop: true,
@@ -34,17 +11,3 @@ let swiperEvent = new Swiper(".event__container", {
         clickable: true,
     },
 });
-
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
-
-/*==================== SHOW SCROLL UP ====================*/ 
-
-
-/*==================== DARK LIGHT THEME ====================*/ 
