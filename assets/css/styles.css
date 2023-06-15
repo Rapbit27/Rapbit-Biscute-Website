@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 40;
+  --hue: 15;
   --first-color: hsl(var(--hue), 62%, 50%);
   --first-color-alt: hsl(var(--hue), 62%, 18%);
   --first-color-light: hsl(var(--hue), 62%, 56%);
@@ -15,8 +15,8 @@
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: #e9d415;
-  --background-image: linear-gradient(to bottom right, #ec6f09b9, #b0dd0cd2);
+  --body-color: #eecd85;
+  --background-image: linear-gradient(to bottom right, #f1984eb9, #f5d859d2);
   --white-color: #FFF;
   --container-color: #FFF;
 
@@ -1264,4 +1264,99 @@ the website, in dark theme
 .section__subtitle1,
 .section__title1 {
   text-align: center;
+}
+
+
+
+/* ===================  ABOUT US PAGE ======================== */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+  grid-column-gap: 2em;
+}
+
+/* ==== Layout ====*/
+
+.head {
+text-align: center;
+margin-top: 3em;
+margin-bottom: 3em;
+}
+
+.page-title {
+color: #000;
+font-size: 2.5rem;
+justify-self: center;
+}
+
+.main-text {
+grid-column: 2 / -2;
+margin-top: 3em;
+margin-bottom: 3em;
+}
+
+.section-title::after {
+content: "";
+display: block;
+width: 100px;
+height: 3px;
+margin-top: 1em;
+background: #fda039;
+margin-left: auto;
+margin-right: auto;
+}
+
+.sub {
+margin-top: 3em;
+}
+
+
+@media (min-width: 600px) {
+  .main-grid {
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(20px, 320px)) minmax(1em, 1fr);
+  }
+
+  .head {
+    grid-column: 3 / -3;
+  }
+  
+  .page-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #fda039;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  
+  .main-image {
+    grid-column: 2;
+    margin-top: 1.3em;
+
+  }
+  
+  .main-text {
+    grid-column: 3 / span 2;
+    margin-top: 0;
+  }
+  
+  .section-title::after {
+     margin-left: 0;
+  }
+}
+
+@media(min-width: 700px) {
+.page-title::after {
+  content: '';
+  display: block;
+  width: 160px;
+  height: 5px;
+  background: #fda039;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  }
 }
