@@ -886,9 +886,10 @@ body.dark-theme{
 
 .footer__information{
   font-size: var(--small-font-size);
+  color: var(--text-color-light)
 }
 .footer__email {
-  color: var(--text-color);
+  color: var(--text-color-light);
 }
 
 .footer__social{
@@ -898,7 +899,7 @@ body.dark-theme{
 
 .footer__social-link{
   font-size: 1rem;
-  color: var(--text-color);
+  color: var(--text-color-light);
   transition: .3s;
 }
 
