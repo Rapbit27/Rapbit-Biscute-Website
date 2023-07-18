@@ -174,7 +174,7 @@ body.dark-theme{
   --first-color-alt: rgba(140, 0, 255, 0.884);
   --title-color: hsl(var(--hue), 15%, 8%);
   --text-color: hsl(var(--hue), 100%, 100%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
+  --text-color-light: hsl(var(--hue), 50%, 5%);
   --first-color-dark: hsl(var(--hue), 8%, 20%);
   --body-color: rgb(255, 255, 0);
   --home-color: rgb(156, 38, 153);
@@ -634,6 +634,7 @@ body.dark-theme{
 .product__description {
   text-align: center;
   margin: 2rem 0 1rem 0;
+  color: var(--text-color-light);
 }
 
 .product__container {
