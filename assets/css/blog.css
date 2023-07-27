@@ -1,0 +1,133 @@
+
+.wrap {
+	height: 100%;
+}
+
+.left {
+	/* position: fixed; */
+	width: 30%;
+	height: 100%;
+	min-height: 150px;
+	float: left;
+	text-align: center;
+	color: #e93939;
+
+	header {
+		margin-top: 75%;
+	}
+	h1 {
+		font-family: verdana, sans-serif;
+	}
+	p {
+		font-size: 80%;
+		color: rgba(243, 48, 48, 0.8);
+	}
+	a {
+		color: #df3939;
+		text-decoration: none;
+		&:hover {
+			color: #e92424;
+			border-bottom: 1px solid #db4b4b;
+		}
+	}
+}
+
+.right {
+	position: relative;
+	width: 70%;
+	height: 100%;
+	float: right;
+
+	article {
+		padding: 5%;
+
+		h2 {
+			border-bottom: 1px solid #2926fc;
+			margin-bottom: 20px; 
+		}
+		.date {
+			text-transform: uppercase;
+			font-size: 60%;
+			padding-bottom: 15px;
+		}
+		span {
+			font-style: italic;
+			color: rgba(226, 30, 30, 0.788);
+		}
+		p {
+			padding: 10px 0 10px 0;
+		}
+		img {
+			padding: 5px;
+		}
+	}
+}
+
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr { 
+	padding: 0; 
+	border: none; 
+	border-top: medium double #ddd; 
+	color: #ddd; 
+	text-align: center; 
+}
+hr:after { 
+	content: "§"; 
+	display: inline-block; 
+	position: relative; 
+	top: -0.7em; 
+	font-size: 1.5em; 
+	padding: 0 0.25em; 
+	background: #ffffff; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.left {
+		float: none;
+		position: relative !important;
+		width: 100%;
+		min-height: 150px;
+		header {
+			margin-top: 0;
+			padding-top: 20px;
+		}
+	}
+	.right {
+		float: none;
+		position: relative !important;
+		width: 100%;
+		font-size: 95%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.right {
+		article {
+			h2 {
+				font-size: 105%;
+			}
+			p {
+				font-size: 85%;
+			}
+		}
+	}
+	.float-left, .float-right {
+		float: none;
+	}
+	img {
+		width: 95%;
+	}
+}
+	
