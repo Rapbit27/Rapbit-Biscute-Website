@@ -1663,12 +1663,12 @@ margin-bottom: 3em;
 .section-title::after {
 content: "";
 display: block;
-width: 100px;
+width: 200px;
 height: 3px;
-margin-top: 1em;
+margin-top: 0.5em;
 background: #fda039;
-margin-left: auto;
-margin-right: auto;
+/* margin-left: auto;
+margin-right: auto; */
 }
 
 .sub {
@@ -1684,8 +1684,6 @@ margin-top: 3em;
   .head {
     grid-column: 3 / -3;
   }
-  
-  
   
   .section-title::after {
      margin-left: 0;
